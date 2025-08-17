@@ -10,9 +10,10 @@ public class UsuarioRepositoryImpl implements UsuarioRepository {
 
     private List<Usuario> usuarios = new ArrayList<>();
 
+    //usuarios admin:1234 user:abcd
     public UsuarioRepositoryImpl() {
-        usuarios.add(new Usuario("admin", "1234", true));
-        usuarios.add(new Usuario("user", "abcd", true));
+        usuarios.add(new Usuario("admin", "$2a$12$hHm2rBwxwyWkJ4KP8ttnMeg1NAiGFXR2lbCh18Ua2MQExcoF4J.pa", true));
+        usuarios.add(new Usuario("user", "$2a$12$DDtLTOvcIKsgbDDN/TBUA.mm2Yuf1AGZkczeUUVrhG6ROPm7vw3tK", true));
     }
 
     @Override
